@@ -1,1 +1,43 @@
 Git hub is a git hosting service which will hold our projects in their repositories
+
+in github there are some main concepts branches , Pull Requests , Merge etc.,
+
+
+After we commit from staging area to local repository we need to tell the local repository to which remote repository it has to do push 
+by using 
+
+git remote add origin https://github.com/ManojSagile/git_Practice_Steps.git 
+
+the above command will let know git about our remote repository
+
+if we face issue while commiting to local repository like identity issue you can use below
+>git config --global user.name "ManojSagile"
+git config --global user.email "manoj18.329@gmail.com"
+
+then we can push the files using -- git push -u origin master
+
+we can check the current branches by using -- git branch
+
+if we want to switch between branches -- git checkout branchname 
+
+if there is no such kind of branch exist we will create and switch using -- git branch -b branchname
+
+
+after we push the files to remote repository , we can see in git hub our recent push with our committing message then we need to create a Pull Request 
+
+Pull Request - Actually there is a default branch in git hub which is master/main and the mergings will done by this master branch only 
+
+so if we want to work on the project like several people are working then each person will create their branch with certain name then that branch is a copy of master 
+we will have the same files in every branch after our work done we will commit and push the code to our respective branch then 
+we will let know admin about out code changes and ask to review and merge by creating a Pull Request then admin will see there is an pull Request raised and then admin will review the PR and then Merge if legit
+
+
+if we have project in remote repository but we want to have it on our local machine then we need to use 
+git clone https://github.com/ManojSagile/git_Practice_Steps.git
+
+we can find that link on our repository where there is a green code button
+
+so when we do git clone we will have that project in our local machine then we will work by creating a branch or existed brnach 
+
+we will use -- git pull when we want the files with changes updated into our local repository
+we will use -- git fetch  when we want the files with no changes updated into our local repository
