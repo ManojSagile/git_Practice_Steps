@@ -1,0 +1,1 @@
+Git hub is a git hosting service which will hold our projects in their repositories
