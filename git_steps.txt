@@ -1,0 +1,18 @@
+firstly we have to intialaise a folder as git repository using -- git init 
+To check status of that repository we have to use -- git status ,this will results what are the files recently get modified and still in the working directory 
+
+there are 4 elements in git :
+
+Remote repository -- repository in github which will hold our project files in online 
+Local repository -- repository in local machine will hold the project files in local but we can't see
+Staging -- before adding to local repository the files must need to add to staging area from working directory using --git add 
+working directory -- FOlder/directory where we are actally working 
+we will save to files to Remote repository only when we have desired files in local repository using --git push
+we will save files from staging area to local using git commit
+
+order is 
+
+working directory(Where we are working ) --> Staging area (one file at a time using -git add ) --> Local repository(git commit -m "We can write message about commiting")-->Remot repository(git push)
+
+
+if we made change in any file after added to staging we will again do git add so that changes will update to that file
